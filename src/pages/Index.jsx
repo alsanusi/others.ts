@@ -9,6 +9,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 // Components
 import AppBar from "../components/AppBar";
 import BlogCard from "../components/BlogCard";
+import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 
 // Data
@@ -48,7 +49,7 @@ export default function Index() {
             </Typography>
           </Container>
         </Box>
-        <Container sx={{ py: 8 }} maxWidth="lg">
+        <Container sx={{ py: 6 }} maxWidth="lg">
           {/* End hero unit */}
           <Grid container spacing={4}>
             {indexData.map((x) => (
@@ -62,6 +63,9 @@ export default function Index() {
               </Grid>
             ))}
           </Grid>
+        </Container>
+        <Container maxWidth="lg" sx={{ py: 8}}>
+          <CTA />
         </Container>
       </main>
       <Footer />
