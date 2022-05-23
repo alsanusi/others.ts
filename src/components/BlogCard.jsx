@@ -42,7 +42,11 @@ export default function BlogCard({ ...props }) {
             </Typography>
           </Grid>
         </Grid>
-        <Typography gutterBottom variant="h5" fontWeight="bold">
+        <Typography
+          gutterBottom
+          variant="h5"
+          sx={{ fontFamily: "DM Serif Display, serif" }}
+        >
           {props.title}
         </Typography>
         <Typography variant="subtitle2">{props.description}</Typography>
