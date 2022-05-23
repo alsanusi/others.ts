@@ -35,7 +35,7 @@ export default function Index() {
               variant="h2"
               align="center"
               color="text.primary"
-              fontWeight="bold"
+              sx={{ fontFamily: "DM Serif Display, serif" }}
             >
               Other.ts Blog
             </Typography>
@@ -64,7 +64,7 @@ export default function Index() {
             ))}
           </Grid>
         </Container>
-        <Container maxWidth="lg" sx={{ py: 8}}>
+        <Container maxWidth="lg" sx={{ py: 8 }}>
           <CTA />
         </Container>
       </main>
