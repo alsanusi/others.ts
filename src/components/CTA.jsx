@@ -10,7 +10,7 @@ export default function CTA() {
     <Card sx={{ bgcolor: "#1B1E23" }}>
       <CardContent sx={{ margin: 4 }}>
         <Grid container>
-          <Grid item xs={6} md={6}>
+          <Grid item xs={12} md={6}>
             <Typography
               variant="h5"
               color="white"
@@ -22,7 +22,7 @@ export default function CTA() {
           </Grid>
           <Grid
             item
-            xs={6}
+            xs={12}
             md={6}
             sx={{ textAlign: "right", alignSelf: "center" }}
           >
