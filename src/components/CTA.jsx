@@ -35,7 +35,7 @@ export default function CTA() {
                 fontWeight: "bold",
               }}
             >
-              Gabung Sekarang
+              <Link color="inherit" href="https://smktelkom-mks.sch.id" underline="none">Gabung Sekarang</Link>
             </Button>
           </Grid>
         </Grid>
