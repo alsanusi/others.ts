@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
 
 export default function CTA() {
   return (
@@ -35,7 +36,7 @@ export default function CTA() {
                 fontWeight: "bold",
               }}
             >
-              Gabung Sekarang
+              <Link color="inherit" href="https://smktelkom-mks.sch.id" underline="none">Gabung Sekarang</Link>
             </Button>
           </Grid>
         </Grid>
