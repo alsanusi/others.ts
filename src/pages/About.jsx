@@ -8,7 +8,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Divider from "@mui/material/Divider";
 
 // Components
-import AppBar from "../components/AppBar";
+import AppBar  from "../components/AppBar";
 import TeamCard from "../components/TeamCard";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
