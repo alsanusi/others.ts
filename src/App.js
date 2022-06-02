@@ -8,6 +8,7 @@ import {
 // Pages
 import Index from './pages/Index';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Index />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </Router>
   );
