@@ -4,23 +4,21 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-
+import Grid from "@mui/material/Grid";
 
 //component
 import ContactForm from "../components/ContactForm";
 import AppBar from "../components/AppBar";
 import Footer from "../components/Footer";
 
-
 const theme = createTheme();
 
-export default function Index() {
-    return(
+export default function Contact() {
+  return (
     <ThemeProvider theme={theme}>
-    <CssBaseline />
-    <AppBar />
-        <main>
-         
+      <CssBaseline />
+      <AppBar />
+      <main>
         {/* Hero unit */}
         <Box
           sx={{
@@ -39,13 +37,32 @@ export default function Index() {
               Contact
             </Typography>
             <Typography variant="subtitle1" align="center" color="#787878">
-              Punya kritik dan saran silahkan isi dibawah 
+              Punya kritik dan saran silahkan isi dibawah
             </Typography>
           </Container>
         </Box>
-        </main>
-        <ContactForm />
-        <Footer />
+      </main>
+      <ContactForm />
+      <Container maxWidth="lg" sx={{ pb: 8 }}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={12}>
+            <Typography variant="h5" align="right">
+              others.ts@gmail.com
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={12}>
+            <Typography variant="h5" align="right">
+              +62 123456789
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={12}>
+            <Typography variant="h5" align="right">
+              SMK Telkom Makassar
+            </Typography>
+          </Grid>
+        </Grid>
+      </Container>
+      <Footer />
     </ThemeProvider>
-);
+  );
 }
