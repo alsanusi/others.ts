@@ -54,12 +54,14 @@ export default function Index() {
           <Grid container spacing={4}>
             {indexData.map((x) => (
               <Grid item key={x.id} xs={12} sm={6} md={4}>
-                <BlogCard
-                  date={x.date}
-                  writer={x.writer}
-                  title={x.title}
-                  description={x.description}
-                />
+                <a href="/detail" style={{ textDecoration: "unset" }}>
+                  <BlogCard
+                    date={x.date}
+                    writer={x.writer}
+                    title={x.title}
+                    description={x.description}
+                  />
+                </a>
               </Grid>
             ))}
           </Grid>
