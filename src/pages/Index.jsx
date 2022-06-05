@@ -37,7 +37,7 @@ export default function Index() {
               color="text.primary"
               sx={{ fontFamily: "DM Serif Display, serif" }}
             >
-              Other.ts Blog
+              Others.ts Blog
             </Typography>
             <Typography
               variant="h6"
